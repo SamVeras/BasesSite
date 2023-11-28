@@ -1,0 +1,56 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 50%;
+    margin: auto;
+}
+
+/* Estilos para o cabeçalho */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para os elementos do formulário */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="number"],
+button {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+button {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o resultado */
+#resultado {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
