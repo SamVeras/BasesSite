@@ -4,6 +4,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     width: 50%;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -36,6 +37,13 @@ button {
     box-sizing: border-box;
 }
 
+nav ul {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 button {
     background-color: #007bff;
     color: #fff;
@@ -53,4 +61,12 @@ button:hover {
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #fff;
+}
+
+#catImageContainer {
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    margin: auto;
+    object-fit: cover;
 }
