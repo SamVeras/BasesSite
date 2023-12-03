@@ -41,9 +41,5 @@ function converter() {
 
     // Exibe o resultado na página
     const resultadoDiv = document.getElementById('resultado');
-<<<<<<< HEAD
     resultadoDiv.innerHTML = `${numeroInput}<sub>${baseInput}</sub> = ${numBaseConvertido.join('')}<sub>${novaBaseInput}</sub>`;
-=======
-    resultadoDiv.innerHTML = `${numeroInput}<sub>${baseInput}</sub> = ${numBaseConvertido.join('')}<sub>${novaBaseInput}</sub>.`;
->>>>>>> 15543c89badd164b80f89c0226b36ef2bff191a1
 }
