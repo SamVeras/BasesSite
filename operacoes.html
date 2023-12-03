@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Conversor de Bases</title>
+    <title>Operações</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" sizes="96x96" href="favicon1.png" />
+    <link rel="icon" href="favicon1.png">
     <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/9ae3054afa.js"
@@ -12,41 +12,58 @@
     ></script>
   </head>
   <body>
-    <main>
-      <h1>Conversor de Bases</h1>
+      <main>
+        <h1>Operações</h1>
       <nav>
         <ul>
-          <a href="">
+          <a href="index.html">
             <li>Conversão</li>
           </a>
-          <a href="operacoes.html">
+          <a href="">
             <li>Operações</li>
           </a>
         </ul>
       </nav>
 
-      <label for="numeroInput">Digite um número:</label>
-      <input class="text-input" type="text" id="numeroInput" />
+      <label for="numeroInput1">Digite o primeiro número:</label>
+      <input class="text-input" type="text" id="numeroInput1" />
 
-      <label for="baseInput">Escolha a base do número:</label>
-      <input class="text-input" type="number" id="baseInput" />
+      <label for="baseInput1">Escolha a base do primeiro número:</label>
+      <input class="text-input" type="number" min="2" id="baseInput1" />
 
-      <label for="novaBaseInput">Escolha a nova base:</label>
-      <input class="text-input" type="number" id="novaBaseInput" />
+      <br /><br />
 
-      <button onclick="converter()">Converter</button>
+      <label for="numeroInput2">Digite o segundo número:</label>
+      <input class="text-input" type="text" id="numeroInput2" />
 
-      <div id="resultado">Insira os campos e clique em converter</div>
+      <label for="baseInput2">Escolha a base do segundo número:</label>
+      <input class="text-input" type="number" min="2" id="baseInput2" />
+
+      <br /><br />
+
+      <label for="operacao">Escolha a operação:</label>
+      <select id="operacao">
+        <option value="SOMA">Soma</option>
+        <option value="SUBT">Subtração</option>
+        <option value="MULT">Multiplicação</option>
+        <option value="DIVS">Divisão</option>
+      </select>
+
+      <label for="baseOutput">Escolha a base desejada do resultado:</label>
+      <input class="text-input" type="number" min="2" id="baseOutput" />
+
+      <button onclick="realizarOperacao()">Calcular</button>
+
+      <div id="resultado">O resultado será exibido aqui</div>
     </main>
-
     <footer>
       <div></div>
       <div>
         <h3><s>Copyright</s> ©2023</h3>
         <p>
-          Esse site foi feito por alunos do Bacharelado em Ciência da Computação
-          do IFC Campus Blumenau, na matéria de desenvolvimento web, no segundo
-          semestre.
+          Esse site foi feito por alunos do Bacharelado em Ciência da
+          Computação do IFC Campus Blumenau, na matéria de desenvolvimento
+          web, no segundo semestre.
         </p>
         <div style="text-align: left; margin: auto">
           <br />
@@ -99,7 +116,6 @@
           </table>
         </div>
       </div>
-
       <div></div>
     </footer>
   </body>
